@@ -1,0 +1,26 @@
+{
+  "name": "wysi",
+  "version": "1.0.0",
+  "description": "## C'est quoi ? MY_WYSIWYG est un outil qui permet d'écrire du texte facilement et de voir directement à quoi il ressemblera une fois mis en page, comme dans un traitement de texte. Il fonctionne grâce à un module JavaScript.",
+  "main": "index.js",
+  "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpitechWebAcademiePromo2026/W-WEB-090-LIL-1-1-wysiwyg-abdellah1.djezzar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EpitechWebAcademiePromo2026/W-WEB-090-LIL-1-1-wysiwyg-abdellah1.djezzar/issues"
+  },
+  "homepage": "https://github.com/EpitechWebAcademiePromo2026/W-WEB-090-LIL-1-1-wysiwyg-abdellah1.djezzar#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7"
+  }
+}

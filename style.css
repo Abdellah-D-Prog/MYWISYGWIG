@@ -1,0 +1,110 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Conteneur principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.editor-container {
+    position: relative;
+}
+
+/* Conteneur de l'éditeur */
+#textarea {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    min-height: 300px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+#textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Barre d'outils */
+.wysiwyg-toolbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.wysiwyg-toolbar button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.wysiwyg-toolbar button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Styles pour les boutons actifs */
+.wysiwyg-toolbar button:active {
+    transform: translateY(0);
+}
+
+.wysiwyg-toolbar button.active {
+    background-color: #2c3e50;
+}
+
+/* Style pour le status et l'alerte */
+.status {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #2980b9;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    animation: slideIn 0.3s ease-out;
+}
